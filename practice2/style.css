@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#navbar{
+    height: 60px;
+    background-color: black;
+}
+button{
+    background-color: #1a2b13;
+    transition: .3s;
+}
+#logo{
+    color: rgb(14, 240, 14);
+    font-size: 25px;
+}
+a{  
+    text-decoration: none;
+    margin-right: 150px;
+    border: 2px solid rgb(40, 49, 25); 
+    border-radius: 2px;
+    transition: color 0.3s ease; 
+    /* margin-right: 200px; */
+   
+}
+a:hover{
+   
+    color: rgb(64, 209, 20);
+}
+button:hover{
+    color: rgb(39, 190, 64);
+}
+input{
+    color: rgb(3, 3, 3);
+    background-color: rgb(159, 179, 131);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.Container{
+    width: 1120px;
+    margin: 1px auto;
+}
+
+.menu ul li a{
+    text-decoration: none;
+
+    color: aliceblue;
+    border: 2px solid rgb(45, 38, 51);
+    border-radius: 5px;
+    background-color: rgb(31, 29, 27);
+    padding: 0,9px;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.menu {
+     background-color: rgb(51, 8, 8);
+     padding: 5px;
+    
+}
+.menu ul li a:hover{
+    background-color: rgb(43, 73, 73);
+    color: yellow;
+} */

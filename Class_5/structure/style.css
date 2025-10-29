@@ -1,0 +1,18 @@
+h4{
+    color: blueviolet;
+    background-color: rgb(248, 233, 233);
+    text-align: center;
+}
+
+.css{
+    color: blue;
+    background-color: aquamarine;
+}
+
+#css2{
+    color:red;
+    background-color: blueviolet;
+    font-size: 320%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}

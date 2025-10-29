@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with registration</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+
+
+     <style>
+    /* --- Basic Reset --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* --- Navbar Container --- */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 10px 40px;
+      color: white;
+    }
+
+    /* --- Logo --- */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .logo h1 {
+      font-size: 1.5em;
+      color: #fff;
+    }
+
+    /* --- Navbar Links --- */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    /* --- Icons on the right --- */
+    .nav-icons img {
+      width: 28px;
+      height: 28px;
+      border-radius: 10px;
+      margin-left: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+    <nav>
+    <!-- Left Side: Logo -->
+    <div class="logo">
+      <img src="https://images.seeklogo.com/logo-png/46/1/bangladesh-cricket-board-logo-png_seeklogo-460126.png" alt="Logo">
+      <h1>Bangladesh Cricket Board</h1>
+    </div>
+
+    <!-- Middle: Links -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Right Side: Icons -->
+    <div class="nav-icons">
+        <figure>
+      <img src="https://th.bing.com/th/id/R.b2b34517339101a111716be1c203f354?rik=e5WHTShSpipi3Q&pid=ImgRaw&r=0" alt="Search" height="300px" width="200px">
+      
+      <img src="https://blogs.ubc.ca/nika/files/2013/11/search-marketing.jpg" alt="User" height="300px" width="200px"></figure>
+    </div>
+  </nav>
+
+</body>
+</html>
+</body>
+</html>
