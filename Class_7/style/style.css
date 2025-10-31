@@ -7,7 +7,7 @@ body{
 }
 .hero-section{
     background-image: url(../assets/images/Rectangle\ 2.png);
-    height: 600px;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat ;
     text-align: center;
@@ -43,15 +43,66 @@ body{
 }
 
 .hero-section p{
-    color: rgba(255, 255,255, alpha);
+    color: rgba(255, 255,255,1);
     width:700px ;
     margin-bottom: 32px;
 }
 .hero-section a{
 
-    background-color: rgba(82, 195,3,1);
+    background-color: rgb(10, 8, 12,.5);
     padding: 10px 15px;
     text-decoration: none;
     color: #ffffff;
     border-radius: 8px;
+}
+.hero-section a:hover{
+    background-color: rgba(26, 19, 32, 1);
+    
+}
+
+/* later part */
+
+.Navbar{
+    background-color: black;
+    width: 100%;
+    margin:auto;
+    padding: 10px;
+    padding-left: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navbar nav ul{
+     display: flex;
+    list-style-type: none;
+    
+   
+}
+.Navbar nav ul li{
+    margin: 0 5px;
+}
+.Navbar nav ul li a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #494234;
+}
+
+.Navbar nav ul li a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background-color: #c8ebb1;
+    z-index: -1;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    width: 100%;
+    background-color: #4d8051;
+    border-radius: 30px;
 }
