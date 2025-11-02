@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color: aqua;
+    background-image: url(../assets/Image/chef.jpg);
+    background-position: relative;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Navbar nav ol{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.Navbar nav ol li{
+    
+    list-style-type: none;
+    margin-right: 100px;
+    margin-left: 50px;
+   
+}
+.Navbar nav ol li a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+.Navbar nav ol li a:hover{
+    background-color: rgb(53, 63, 63);
+    border-radius: 10%;
+}
+
+#image img{
+    width: 1000px;
+    
+    margin-left: 150px;
+    height: 60vh;
+    /* align-items: center; */
+    border-radius: 20px;
+}
+
+p{   
+
+    margin: 10px;
+    padding: 10px;
+}
+
+#footer{
+    background-color: rgb(41, 35, 35,.9);
+    height: 250px;
+    text-align: center;
+    margin-bottom: 10px;
+}
