@@ -1,0 +1,20 @@
+body{
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    
+    margin-left: 600px;
+    margin-top: 200px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function:ease-out;
+}
+
+.box:hover{
+    transform: rotate(135deg);
+}

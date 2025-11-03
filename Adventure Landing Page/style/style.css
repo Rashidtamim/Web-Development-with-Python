@@ -10,7 +10,14 @@
 a{
     text-decoration: none;
     color: whitesmoke;
+    transition-property: width;
+    transition-duration: 1s;
+    
 
+}
+a:hover{
+    width: 50px;
+    background-color:rgb(87, 38, 38,.5);
 }
 /* Design for navbar */
 .navbar{
@@ -71,6 +78,9 @@ header{
     background: rgba(103, 83, 83,.5);
     color: rgb(184, 48, 48);
     border-radius: 10px;
+}
+.btn:hover{
+    background-color: #49497e;
 }
 
 section{
@@ -217,3 +227,8 @@ button{
     border-radius: 5px;
     border: 1px;
 }
+button:hover{
+    background-color: #484872;
+}
+
+
