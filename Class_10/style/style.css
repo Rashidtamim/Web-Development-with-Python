@@ -2,7 +2,51 @@
     margin: 0;
     padding: 0;
 }
+/* Navbar start from here */
+.navbar {
+  position:relative;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007BFF;
+}
+
+.navbar nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.navbar nav a:hover{
+    background-color: #0056b3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-primary {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+/* navbar section ends here */
 
 .head h2 {
     text-align: center;
@@ -35,17 +79,17 @@
 .box1 {
     height: 320px;
     width: 300px;
-    /* border: 5px solid rgb(194, 34, 34); */
+    /* border: 5px solid rgb(194, 34, 34);  */
     border-radius: 30px;
     margin-left: 10px;
     text-align: left;
     margin-bottom: 20px;
     /* transition-property: height; */
+    /* transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function:ease-out; */
 }
-/* .box1:hover{
-    height:420px ;
-    background-color: brown;
-} */
+
 
 .box1 img {
     height: 140px;
@@ -200,6 +244,12 @@
     border-radius: 30px;
     margin-left: 10px;
     text-align: left;
+    transition-property: transform;
+     transition-duration: 1s;
+    transition-timing-function:ease-out;
+}
+.box6:hover,.box1:hover,.box2:hover,.box3:hover,.box4:hover,.box5:hover{
+    transform: rotate(-10deg);
 }
 
 .box6 img {
@@ -234,3 +284,19 @@
 a:hover{
     background: rgb(103, 17, 184,.5);
 }
+
+
+/* footer section start here */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+
+/* footer section ends here */
+
+
+

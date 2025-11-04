@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+    background-color: rgb(34, 30, 30);
+    height: 20%;
+}
+
+.menu {
+    width: 1120px;
+    height: 0 auto;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* Userinfo style */
+.user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.user_info hr {
+    border: 1px solid #0e1120;
+    width: 13%;
+}
+
+/* .user_info table{
+    margin-top: 50px;
+    width: 900px;
+    border: 2px solid gray;
+    text-align: center;
+} */
+.table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+
+.table th,
+td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: rgb(31, 51, 44);
+    color: whitesmoke;
+}
+
+
+.operation {
+    display: flex;
+    justify-content: center;
+}
+
+.edit,
+.update,
+.delete {
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.edit {
+    background-color: #1d4617;
+}
+
+.update {
+    background: #d9c700;
+
+}
+
+.delete {
+    background: #b63232
+}
+
+tr:nth-of-type(2n+1){
+    background-color: red;
+}
