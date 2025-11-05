@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Signature&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=892');
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    /* background: rgb(65, 140, 107); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+}
+.navigation a{
+    position:relative;
+    font-size: 1.1em;
+    color: #2a2323;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    /* transform: scale(0); */
+    transition:.3s;
+
+}
+.navigation a:hover{
+    /* transform-origin: left; */
+    transition-property: wid;
+    background: #b9eebd;
+    color: #141d17;
+    border-radius: 5px;
+
+
+    /* content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: 5px;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform 3s; */
+
+}
+/* .navigation a:hover{
+    transform-origin: left;
+    transform: scaleX(1);
+} */
+
+.navigation .btnlogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+.navigation .btnlogin-popup:hover{
+    background: #b9eebd;
+    color: #141d17;
+}
+
