@@ -5,7 +5,7 @@ num = int(input("Enter the size of the list "))
 for i in range(num):
     n= int(input("Enter item into the list "))
     list.append(n)
-#print(list)
+print(list)
 
 evens = [n for n in list if n % 2 == 0]
 squares = [n**2 for n in evens]
