@@ -43,14 +43,17 @@ while i <=50:
     i+=2'''
     
 
-'''list=[]
+list=[]
 start = 1
 while start<= 50:
     if start % 2 == 0:
         list.append(start)
         # print(list)
     start +=1
-print(list)'''
+print(list)
+
+
+
     
 
 
@@ -75,7 +78,7 @@ while rem < 3:
 
 print(count) '''
 
-
+'''
 number = int(input("Enter a positive number (or 0): "))
 count = 0
 temp = number
@@ -90,6 +93,40 @@ while temp > 0:
 while count == 0:
     count = 1              # 0 has 1 digit
 
-print("The number has", count, "digit(s).")
+print("The number has", count, "digit(s).")'''
 
+
+'''cars=['axio','premio','corolla','aqua']
+color = ['grey','black','maron','green']
+for i in cars:
+    car = cars[i]
+    print(car)
+    for j in color:
+      col=color[j]
+      print(col)'''
+cars = ['axio', 'premio', 'corolla', 'aqua']
+color = ['grey', 'black', 'maron', 'green']
+
+# Store pairs to control output
+
+'''for i in range(len(cars)):
+    print(f"{cars[i] } = {color[i]}") 
+    i+=1'''
+    
+    # for j in range(len(color)):
+        # col = color[i]
+        # print(f" This is car {car} and this is the cars color {col}")
+
+
+# fruits = ["apple", "banana", "apple"]
+# print(fruits.index("banana"))  # 1
+# print(fruits.count("apple"))
+
+
+text = "Python is fun and Python is powerful "
+words = text.split()
+print(words)
+
+unique_words = list(set(words))
+print(unique_words)
 
