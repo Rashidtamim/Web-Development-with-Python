@@ -212,3 +212,11 @@ for i in range(1,6):
     for j in range(1,6):
         print("*" , end=' ')
     print()'''
+
+
+
+
+#6.	Write a program to reverse a number using a while loop.
+
+temp = int (input("Enter the number"))
+i=1
