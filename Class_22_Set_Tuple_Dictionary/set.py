@@ -54,19 +54,16 @@ for i in berry:
 
 
 #Find items present in one set but not in another using symmetric_difference().
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
+#Jegulo set1 set2 te ache oigula bad dibo symmetric_difference diye 
+set1={1, 2, 3, 4, 5}
+set2={4, 5, 6, 7}
 
-# Method 1: Using symmetric_difference()
+
 #difference = set1.symmetric_difference(set2)
-difference = set2.symmetric_difference(set1)
-print(difference)  
-# Output: {1, 2, 3, 6, 7}
+difference=set2.symmetric_difference(set1)
+print(difference)
 
-# Method 2: Using the ^ operator (shorter and commonly used)
-difference = set1 ^ set2
-print(difference)  
-# Same output: {1, 2, 3, 6, 7}
+
 
 
 
@@ -86,3 +83,17 @@ copy_set.remove(20)
 
 print(real_set) 
 print(copy_set)   '''   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
