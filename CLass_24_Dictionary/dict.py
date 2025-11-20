@@ -159,6 +159,7 @@ students = {
 
    
 }
+
 print(students['studen1']['Name'])
 
 
@@ -209,3 +210,65 @@ print(student1)
 # students.updates(student1.update(Name='tamim'))
 # students['studen1'].update({"Name":"Rashid" , "age":27})
 # print(students)
+
+#Convert two lists into a dictionary:
+
+
+# -- Keys → Names
+# -- Values → Marks
+
+name = ["Tamim", "Shuvo", "Hassan", "Nipu"]
+marks = [97, 90, 85, 40]
+var = dict (zip (name, marks))
+print(var)
+
+#Write a program that stores employee details and retrieves them by user input ID.
+
+
+students = {
+    'studen1' : {
+        'Name' : "Tamim" ,
+        'age' : 24
+    },
+    'studen2' : {
+        'Name' : "Rashid" ,
+        'age' : 25
+    },
+    'studen3' : {
+        'Name' : "Rajulur" ,
+        'age' : 26
+    },
+    'studen4' : {
+        'Name' : "RRTamim" ,
+        'age' : 27
+    },
+    'studen5' : {
+        'Name' : "RRT" ,
+        'age' : 28
+    }
+
+   
+}
+students['studen5'].update({
+    "Roll":34
+})
+students.update({
+    "studen6": {
+    "Name":"Shuvo",
+    "age" : 27}
+})
+print(students)
+
+
+# while True:
+#     name = input ("Enter a student name: ")
+#     if name == quit:
+#         print("Good bye everyone")
+#         break
+#     if name in students:
+#         info = students[name]
+#         print("Enmployee details")
+#         print(info)
+#     else:
+#         print("Not found")
+

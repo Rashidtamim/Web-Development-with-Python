@@ -180,6 +180,7 @@ while True:
     emp_id = input("Enter Employee ID (or 'quit' to exit): ").strip()
     
     if emp_id.lower() == 'quit':
+    
         print("Goodbye!")
         break
     

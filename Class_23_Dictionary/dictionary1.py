@@ -70,6 +70,20 @@ print("Accessing all nested values cleanly:")
 for student_id, info in students.items():     # .items() gives key + inner dict
     print(f"{student_id} → Name: {info['Name']}, Age: {info['age']}")
 
+    
+employe = {
+    "Tamim" : {
+        "Subject": "English",
+        "Marks": 65
+    },
+    "Shuvo" : {
+       "Subject" : "Math",
+       "Marks" : 78
+
+    }
+}
+print(employe)
+
 
 
 # 7. Count character frequency in a string using dictionary
