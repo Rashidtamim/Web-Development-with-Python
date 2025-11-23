@@ -56,7 +56,7 @@ operator = input("Enter the operation : ")
 result = calculator(n1,n2,operator)
 print(result)'''
 
-def greet(name = "No entry student"):
+'''def greet(name = "No entry student"):
     print(f"Hello {name}")
 name = input("Enter the student name ")
 greet(name)
@@ -67,7 +67,7 @@ greet()
 def add (*args):
     print(sum(args))
 add(5,10,15)
-
+'''
 
 
 #ami janina dictionary theke koto gulo value ashbe
@@ -84,10 +84,12 @@ newfunc(name = "riyad",age = 23, isMarried = False, cgpa = 3.87 , dept = "Cse")
 
 
 
+
+
 #nested funtion
-def outer(): #this is global function
+'''def outer(): #this is global function
     print("outer function")
     def inner():
         print("Inner function")
     inner()
-outer()
+outer()'''
