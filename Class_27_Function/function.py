@@ -72,9 +72,92 @@ add(5,10,15)
 
 #ami janina dictionary theke koto gulo value ashbe
 
-def newfunc(**kargs):
+'''def newfunc(**kargs):
     print(kargs)
-newfunc(name = "riyad",age = 23, isMarried = False, cgpa = 3.87 , dept = "Cse")
+newfunc(name = "riyad",age = 23, isMarried = False, cgpa = 3.87 , dept = "Cse")'''
+
+
+
+# a1 = int(input("Enter a number : "))
+# b2 = int(input("Enter 2nd number : "))
+
+'''a1,b2 = map(int,input("Enter two values").split())
+print(a1 + b2)'''
+#Create a function that prints your name
+
+
+def func(name):
+    print(name)
+func("tamim")
+
+
+
+#Write a function that takes two numbers and prints the sum.
+
+'''def func(n1,n2):
+    return n1 + n2
+a,b = map(int,input("Enter two number : ").split())
+result = func(a,b)
+print(result)
+'''
+#Create a function with default parameters.
+'''def func1(name = "Student"):
+    print(f"Hello {name}")
+name = input("enter your name")
+func1(name)'''
+
+#Write a function that returns the largest of three numbers.
+
+'''def largest(a,b,c):
+    if a>b:
+        if a > c:
+            print(a)
+    elif b>a:
+        if b>c:
+            print(b)
+    else:
+        print(c)
+n1,n2,n3 = map(int,input("Enter three number").split())
+largest(n1,n2,n3)'''
+
+
+
+
+
+#Use *args to add all numbers passed.
+def add(*args):
+    print(sum(args))
+
+add(1,2,3,4,5)
+
+
+#Create a function that returns both sum and average.
+
+def suav(a,b):
+    print(f" Sum of all numbers : {a+b}  and Average is {(a+b)/2} , multiplication {a*b} , Division {a/b} , integar division {a//b}")
+suav(10,23)
+
+#Use **kwargs to print student details.
+
+def student(**kwargs):
+    print(kwargs)
+student(name = "Tamim" ,age = 26 , Type = "opener" , Avg = 34.5)
+
+
+#Write a lambda that squares, cubes, and doubles numbers.
+square = lambda x : x**2
+cubes = lambda x : x**3
+double = lambda x : x*2
+
+print(square(5))
+print(cubes(5))
+print(double(5))
+
+
+
+
+
+
 
 
 
