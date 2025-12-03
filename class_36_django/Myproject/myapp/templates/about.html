@@ -2,7 +2,7 @@
 {% load static %}
 <html>
 <head>
-    <link rel="stylesheet" href="{%static 'css/style.css'}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 <body>
@@ -17,6 +17,7 @@
 <h2 style="color: red;">This is a about page</h2>
 
 <p>Some text on the website.</p>
+<img src="{% static 'images/img.jpg' %}" alt="" height="100px" width="100px">
 
 </body>
 </html>
