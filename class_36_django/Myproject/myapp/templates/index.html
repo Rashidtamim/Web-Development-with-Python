@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .hero {
+            background: #4CAF50;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1 1 calc(33.33% - 20px);
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Responsive for mobile */
+        @media (max-width: 600px) {
+            .box {
+                flex: 1 1 100%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+
 </head>
 <body>
-    <p>hello world</p>
+
+<ul>
+   <li><a href="{% url 'home' %}">Home</a></li>
+  <li><a href="{% url 'news1' %}">News</a></li>
+  <li><a href="{% url 'contact1' %}">Contact</a></li>
+  <li><a href="{% url 'about1' %}">About</a></li>
+</ul>
+
+  <header>
+        My Website
+    </header>
+
+    <section class="hero">
+        <h1>Welcome!</h1>
+        <p>This is a clean and simple homepage.</p>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center;">Features</h2>
+
+        <div class="features">
+            <div class="box">
+                <h3>Fast</h3>
+                <p>Your website loads quickly and smoothly.</p>
+            </div>
+
+            <div class="box">
+                <h3>Responsive</h3>
+                <p>Looks great on both mobile and desktop.</p>
+            </div>
+
+            <div class="box">
+                <h3>Modern</h3>
+                <p>Clean UI with simple and elegant design.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 My Website. All rights reserved.
+    </footer>
+
 </body>
 </html>
