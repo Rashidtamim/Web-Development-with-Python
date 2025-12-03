@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="{% url 'news1' %}">News</a></li>
+  <li><a href="{% url 'contact1' %}">Contact</a></li>
+  <li><a href="{% url 'about1' %}">About</a></li>
+</ul>
+
+<!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MyWebsite</h1>
+            <p>Your gateway to the latest news, updates, and information.</p>
+            <a href="{% url 'news1' %}" class="btn">Explore News</a>
+        </div>
+    </section>
+
+</body>
+</html>
