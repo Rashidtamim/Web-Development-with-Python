@@ -1,0 +1,36 @@
+<!-- templates/include/header.html -->
+<!-- <header>
+  <div class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo.png" alt="MyBrand Logo">
+      <span>MyBrand</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a>
+      <a href="about.html" class="<%= currentPage === 'about' ? 'active' : '' %>">About</a>
+      <a href="contact.html" class="<%= currentPage === 'contact' ? 'active' : '' %>">Contact</a>
+      <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <div class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+      Menu
+    </div>
+  </div>
+</header> -->
+
+<header class="header">
+    <div class="container">
+        <h2 class="logo">
+            <a href="/">MySite</a>
+        </h2>
+        <nav>
+            <ul class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home-My Site
+{% endblock title %}
+
+
+{% block content %}
+
+
+<section class="hero">
+    <h1>Welcome to My Django Practice Site</h1>
+    <p>Template inheritance, static files, and custom tags — all working!</p>
+    <a href="#" class="btn">Get Started</a>
+</section>
+
+<section class="grid">
+    <div class="card">
+        <h3>Fast to Build</h3>
+        <p>Create pages quickly using this layout.</p>
+    </div>
+    <div class="card">
+        <h3>Static Friendly</h3>
+        <p>CSS and JS come from the static folder.</p>
+    </div>
+    <div class="card">
+        <h3>Modular</h3>
+        <p>Header and footer are reusable includes.</p>
+    </div>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        
+        {% block title %}
+            
+        {% endblock title %}
+            
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- header -->
+     {% include 'includes/header.html' %}
+
+
+    <main class="container">
+
+        
+        {% block content %}
+            
+        {% endblock content %}
+            
+
+        
+
+    </main>
+
+   
+    {% include 'includes/footer.html' %}
+
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+
+</html>

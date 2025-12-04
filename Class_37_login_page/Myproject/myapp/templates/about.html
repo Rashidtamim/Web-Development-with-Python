@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+<ul>
+   <li><a href="{% url 'home' %}">Home</a></li>
+  <li><a href="{% url 'news1' %}">News</a></li>
+  <li><a href="{% url 'contact1' %}">Contact</a></li>
+  <li><a href="{% url 'about1' %}">About</a></li>
+</ul>
+
+<h2 style="color: red;">This is a about page</h2>
+
+<p>Some text on the website.</p>
+<img src="{% static 'images/img.jpg' %}" alt="" height="100px" width="100px">
+
+</body>
+</html>
