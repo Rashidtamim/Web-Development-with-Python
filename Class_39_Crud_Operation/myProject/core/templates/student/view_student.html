@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+View Student - Student Management System
+{% endblock title %}
+
+
+
+{% block content %}
+
+
+
+{% for s in student %}
+<h2>Welcome {{ s.full_name }}</h2>
+    <p>Name: {{ s.full_name }}</p>
+{% endfor %}
+    
+
+
+{% endblock content %}
