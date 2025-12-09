@@ -10,6 +10,12 @@ All Student - Student Management System
 {% block content %}
 <h2>Student List</h2>
 
+<form action="" method="GET" class="search-box" >
+    <input type="text" placeholder="Full_name" name="query" value="{{ request.GET.query }}">
+    <button class="btn">Search</button>
+
+</form>
+
 <table>
     <thead>
         <tr>
@@ -42,6 +48,10 @@ All Student - Student Management System
             </td>
                
             </td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="7" style="text-align: center;">No data found</td>
         </tr>
         {% endfor %}
 

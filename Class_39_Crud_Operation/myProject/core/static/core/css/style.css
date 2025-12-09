@@ -160,3 +160,47 @@ table th {
 table td {
     font-size: 15px;
 }
+
+
+
+/* this is search box css */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-box input[type="text"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-box input[type="text"]:focus {
+    border-color: #5b9bd5;
+    box-shadow: 0 0 5px rgba(91, 155, 213, 0.5);
+}
+
+.search-box .btn {
+    width: 200px;
+    height: 39px;
+    padding: 10px 18px;
+    margin-left: 8px;
+    background-color: #5b9bd5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box .btn:hover {
+    background-color: #4a8ac0;
+}
+
