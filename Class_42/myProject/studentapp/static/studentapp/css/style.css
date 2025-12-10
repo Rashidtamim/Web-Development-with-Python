@@ -1,0 +1,142 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #2a2a2a;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #00d9ff;
+}
+
+/* HOME SECTION */
+.home-section {
+    padding: 60px 20px;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 32px;
+}
+
+.home-section p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* FORM SECTION */
+.form-section {
+    padding: 40px 20px;
+}
+
+.student-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.student-form input {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* TABLE SECTION */
+.table-section {
+    padding: 40px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    background: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.view, .edit, .delete {
+    padding: 6px 12px;
+    border: none;
+    margin: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.view { background: #28a745; }
+.edit { background: #ffc107; color: black; }
+.delete { background: #dc3545; }
+
+.view:hover { background: #1e7e34; }
+.edit:hover { background: #e0a800; }
+.delete:hover { background: #c82333; }
+
+
+
+/* FOOTER */
+.footer {
+    background: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+
+
+
+
