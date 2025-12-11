@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render ,get_object_or_404
 
 from studentapp.models import Student
 
@@ -29,5 +29,26 @@ def show_student(request):
     context = {
         "students": data
     }
+
+    
     
     return render(request, 'student/show_student.html', context)
+
+
+def edit_student(request,id):
+    data = get_object_or_404(Student,id=id)
+    context = {
+        'student' : data,
+    }
+    if request.method == "POST":
+        data.name = request.POST.get('name')
+        data.student_id = request.POST.get('student_id')
+        data.email = request.POST.get('email')
+        user_img = request.FILES.get('image')
+        if user_img:
+            data.image = user_img
+        data.save()
+        return redirect('show_student')
+
+
+    return render(request, 'student/edit_student.html',context)

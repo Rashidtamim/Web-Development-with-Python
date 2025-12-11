@@ -9,7 +9,7 @@ All Student
 {% block content%}
 
  <section id="show" class="table-section">
-        <h2>Student List</h2>
+        <h2 style="text-align: center;">Student List</h2>
 
         <table>
             <thead>
@@ -30,13 +30,15 @@ All Student
                 <td>{{ student.student_id}}</td>
                 <td>{{ student.email}}</td>
                
-                <td><img src="{{ student.image.url }}" width="60"></td>
+                <td>
+                    <img src="{{ student.image.url }}" width="60">
+                </td>
                 
-                 <td>
-                        <button class="view">View</button>
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </td>
+                <td>
+                    <a href="" class="view">View</a>
+                    <a href="{% url 'edit_student' student.id %}" class="edit">Edit</a>
+                    <a href="" class="delete">Delete</a>
+                </td>
                </tr>
                {% endfor %}
             </tbody>

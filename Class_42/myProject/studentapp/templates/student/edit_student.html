@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title%}
+
+Edit Student
+
+{% endblock title%}
+
+
+{% block content%}
+
+ <section id="add-student" class="form-section">
+        <h2>Edit Student</h2>
+        <form class="student-form" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name" name="name" value="{{student.name}}" required>
+
+            <label>Student ID</label>
+            <input type="text" placeholder="Enter student ID" name="student_id" value="{{student.student_id}}">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter mail" name="email" value="{{student.email}}">
+
+            <label>Upload Image</label>
+            <img src="{{ student.image.url }}" alt="" class="edit-img">
+            <input type="file" accept="image/*" name="image" required>
+
+            <button type="submit" class="btn">Add Student</button>
+        </form>
+    </section>
+
+{% endblock content %}
