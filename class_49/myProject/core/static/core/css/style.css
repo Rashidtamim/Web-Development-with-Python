@@ -1,0 +1,252 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.logo span {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffdd57;
+}
+
+/* Navigation Links */
+.nav-links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffdd57;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn.primary {
+    background: #ffdd57;
+    color: #333;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 2px solid #ffdd57;
+    color: #ffdd57;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+/* Form Section */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Form Card */
+.form-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 35px 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Heading */
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #ffdd57;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    margin-bottom: 6px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.input-group input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Button Full Width */
+.full-btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Input Focus Effect */
+.input-group input:focus {
+    box-shadow: 0 0 0 2px #ffdd57;
+}
+input[type="file"] {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+/* View Student Section */
+.view-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.view-card {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.view-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffdd57;
+}
+
+/* Table Styling */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+.student-table thead {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.student-table th,
+.student-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.student-table th {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.student-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.student-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Student Image */
+/* .student-table img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #22211e;
+} */
