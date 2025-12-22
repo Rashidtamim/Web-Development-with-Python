@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+Edit Student
+{% endblock title %}
+
+
+
+
+{% block content%}
+    <!-- Add Student Form -->
+    <section class="form-container">
+        <div class="form-card">
+
+            <h2>EDIT Student</h2>
+
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <!-- Image Upload INSIDE form -->
+
+               <div class="input-group">
+                <label for="studentId">Student ID</label>
+                 <input type="text" id="studentId" name="studentId" placeholder="Enter student ID" value="{{student.id}}" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Enter student name" value="{{student.name}}" >
+              </div>
+
+              <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter email address" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="rollNumber">Roll Number</label>
+                  <input type="text" id="rollNumber" name="rollNumber" placeholder="Enter roll number" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="course">Course</label>
+                  <input type="text" id="course" name="course" placeholder="Enter course name" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="age">Age</label>
+                  <input type="number" id="age" name="age" placeholder="Enter age" required>
+              </div>
+
+              <div class="input-group">
+                  <label for="studentImage">Student Image</label>
+                  <input type="file" accept="image/*" id="studentImage" name="studentImage" >
+              </div>
+
+              <button type="submit" class="btn primary full-btn">
+              Add Student
+              </button>
+
+
+            </form>
+        </div>
+    </section>
+
+{% endblock content%}

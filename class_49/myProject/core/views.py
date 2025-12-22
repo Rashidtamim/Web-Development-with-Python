@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 
 from core.models import Student
 
@@ -38,6 +38,19 @@ def view_student(request):
     
     
     return render(request, 'student/view_student.html', context)
+
+
+def edit_student(request,id):
+    data = get_object_or_404(Student,id = id)
+
+    copntext = {
+        'student':data
+    }
+
+
+                                         
+
+    return render(request,'student/edit_student.html')
 
     
 
