@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Home
+{% endblock title %}
+
+
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>Simple login and registration system using HTML & Django</p>
+
+    <a href="{% url 'user_login' %}" class="btn login">Login</a>
+    <a href="{% url 'register' %}" class="btn">Register</a>
+</div>
+{% endblock content %}

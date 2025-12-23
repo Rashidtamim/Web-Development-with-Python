@@ -1,0 +1,14 @@
+# from django.urls import views
+from django.urls import path
+from .import views
+
+urlpatterns = [
+    path('',views.home,),
+    path('add_student/',views.add_student,name='addstudent'),
+    path('all_student/',views.all_student,name='all_student'),
+    path('delete_student/<int:id>', views.delete_student,name='delete_student'),
+    path('view_student/<int:id>', views.view_student,name='view_student'),
+    path('edit_student/<int:id>', views.edit_student,name='edit_student'),
+    
+]
+
