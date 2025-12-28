@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+
+        {% block title %}
+
+        {% endblock title %}
+
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    {% include 'includes/header.html' %}
+
+
+
+    {% if messages %}
+    <div class="space-y-4 mb-6">
+        {% for message in messages %}
+
+        {% if message.tags == 'success' %}
+        <div class="rounded-lg bg-green-100 border border-green-400 text-green-700 px-4 py-3">
+            <strong>Success!</strong> {{ message }}
+        </div>
+
+        {% elif message.tags == 'error' %}
+        <div class="rounded-lg bg-red-100 border border-red-400 text-red-700 px-4 py-3">
+            <strong>Error!</strong> {{ message }}
+        </div>
+
+        {% elif message.tags == 'warning' %}
+        <div class="rounded-lg bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3">
+            <strong>Warning!</strong> {{ message }}
+        </div>
+
+        {% else %}
+        <div class="rounded-lg bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3">
+            <strong>Info:</strong> {{ message }}
+        </div>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center">
+        <!-- Page content goes here -->
+
+
+
+
+        {% block content %}
+
+        {% endblock content %}
+
+
+    </main>
+
+    <!-- Footer -->
+    {% include 'includes/footer.html' %}
+
+</body>
+
+</html>
