@@ -9,8 +9,9 @@
 
         <!-- Desktop Navbar -->
         <nav class="hidden md:flex space-x-6">
+          <a href="{% url 'home' %}" class="text-white-700 text-white">Home</a>
           <a href="{% url 'log' %}" class="text-white-700 text-white">Login</a>
-          <a href="#" class="text-white-700 text-white">Register</a>
-          <a href="#" class="text-white-700 text-white">Dashboard</a>
+          <a href="{% url 'reg' %}" class="text-white-700 text-white">Register</a>
+          <a href="{% url 'dash' %}" class="text-white-700 text-white">Dashboard</a>
         </nav>
     </header>
