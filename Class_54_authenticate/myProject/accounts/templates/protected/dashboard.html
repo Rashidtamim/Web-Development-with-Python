@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock title %}
+
+{% block content %}
+<section class="dashboard">
+
+    <!-- Welcome -->
+    <div class="dashboard-header">
+        <h1>Welcome MR, {{ user.first_name|default:user.username }} 👋</h1>
+        <p class="subtitle">Here’s what’s happening with your account.</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="dashboard-stats">
+
+        <div class="stat-card">
+            <h3>Account Status</h3>
+            <p class="stat-value success">Active</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Member Since</h3>
+            <p class="stat-value">{{ user.date_joined|date:"M Y" }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Last Login</h3>
+            <p class="stat-value">
+                {{ user.last_login|date:"M d, Y · H:i" }}
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="dashboard-actions">
+        <a href="{% url 'profile' %}" class="action-card">
+            <h4>Profile</h4>
+            <p>View and manage your account</p>
+        </a>
+
+        <a href="{% url 'change_password' %}" class="action-card">
+            <h4>Change Password</h4>
+            <p>Update your account security</p>
+        </a>
+
+        <a href="{% url 'logout' %}" class="action-card danger">
+            <h4>Logout</h4>
+            <p>Sign out from your account</p>
+        </a>
+    </div>
+
+</section>
+{% endblock content %}

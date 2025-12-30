@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock title %}
+
+{% block content %}
+<div class="profile-card">
+
+    <div class="profile-header">
+        <div class="avatar">
+            {{ user.username|first|upper }}
+        </div>
+        <h2>{{ user.get_full_name|default:user.username }}</h2>
+        <p class="profile-email">{{ user.email }}</p>
+    </div>
+
+    <div class="profile-details">
+
+        <div class="profile-row">
+            <span>Username</span>
+            <span>{{ user.username }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span>Full Name</span>
+            <span>{{ user.get_full_name|default:"Not provided" }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span>Email</span>
+            <span>{{ user.email|default:"Not provided" }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span>Date Joined</span>
+            <span>{{ user.date_joined|date:"M d, Y" }}</span>
+        </div>
+
+        <div class="profile-row">
+            <span>Last Login</span>
+            <span>{{ user.last_login|date:"M d, Y · H:i" }}</span>
+        </div>
+
+    </div>
+
+    <div class="profile-actions">
+        <a href="{% url 'change_password' %}" class="btn-primary">
+            Change Password
+        </a>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'accounts/cs/style.css' %}">
+</head>
+
+<body>
+
+    {% include 'includes/header.html' %}
+
+    <main class="main-content">
+
+        {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+                <div class="message {{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% block content %}
+        {% endblock content %}
+
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+</body>
+</html>
