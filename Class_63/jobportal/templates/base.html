@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {%block tile%}
+        {%endblock%}
+    </title>
+    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/25/25231.png" type="image/png">
+
+</head>
+<body>
+
+    <!-- Header -->
+   {% include 'includes/header.html'%}
+
+    <!-- Main Content -->
+    <main class="content">
+        {% block content%}
+        {% endblock%}
+        
+    </main>
+
+    {% include 'includes/footer.html' %}
+
+</body>
+</html>
